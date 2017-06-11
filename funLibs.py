@@ -18,6 +18,7 @@ def createGroup():
 	mxs.actionMan.executeAction(0, "310") # Tools: Zoom Extents Selected
 
 def deleteScene():
+	""" pydoc """
 	mxs.actionMan.executeAction(0, "40021") # Selection: Select All
 	for i in mxs.selection: 
 		if mxs.classOf(i) == mxs.Teapot and i.wireColor.B < 210: # use mxs.Teapot refer to Teapot keyword in maxscript, cause there is no such type in python
@@ -25,6 +26,7 @@ def deleteScene():
 
 
 def convertObject():
+	""" pydoc """
 	currentSelection = mxs.selection
 	if len(currentSelection) > 0:
 		for m in currentSelection:

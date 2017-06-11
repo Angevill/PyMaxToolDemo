@@ -3,7 +3,7 @@ import sys
 import os
 
 try:
-	import core
+	from Py3dsMaxDemo import core
 except ImportError:
 	# append current path into PYTHONPATH, in case some import issue
 	dirName = os.path.dirname(__file__)
