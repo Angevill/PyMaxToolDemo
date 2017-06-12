@@ -1,15 +1,9 @@
-""" Py3dsMaxDemo """
+""" PyMaxToolDemo """
+
 import sys
 import os
 
-try:
-    import core
-except ImportError:
-    # append current path into PYTHONPATH, in case some import issue
-    DIRNAME = os.path.dirname(__file__)
-    sys.path.append(DIRNAME)
-    import core
-
+from PyMaxToolDemo import core
 
 __version__ = "0.1.0"
 

@@ -8,7 +8,7 @@ from PyQt4.QtCore import Qt
 
 from blurdev import gui
 
-import funlibs
+from PyMaxToolDemo import funlibs
 
 
 def launch_gui():
